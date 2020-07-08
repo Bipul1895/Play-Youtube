@@ -1,0 +1,26 @@
+Notes 1:
+API : Application program interface, it provides function and classes for performing a task
+
+Downloaded youtube api and pasted the file in apps->libs folder which can be accessed from Project view
+This is the place to put APIs.
+
+Then we go to app level gradle file and wrote : implementation files('libs/nameOfTheFile.extension')
+However we saw that it wasn't essential as first lines in dependencies code block takes care of any
+jar file that is included. Still this is a good practice.
+
+Notes 2:
+To create a new activity : right click package name -> new -> activity
+setContentView(R.layout.layout_name) is a method android automatically generates to show the layout
+file when this class starts execution in the background.
+
+Notes 3 :
+Extend YoutubeBaseActivity and Implement YoutubePlayer.OnInitializedListener.
+
+To view parameter list of a method, press (ctrl + P).
+
+setContentView() method inflates the xml that is passed to it and sets the activity's view to
+the view that it creates. We are doing something similar in YoutubeActivity.java. Here
+setContentView() will call an overloaded method which accepts a view not xml file.
+
+
+YoutubeBaseActivity (the one we are inheriting from) is a subclass of Activity so it contains context.
