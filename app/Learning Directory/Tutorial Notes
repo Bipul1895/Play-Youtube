@@ -24,3 +24,13 @@ setContentView() will call an overloaded method which accepts a view not xml fil
 
 
 YoutubeBaseActivity (the one we are inheriting from) is a subclass of Activity so it contains context.
+
+Notes 4:
+We need to create and setup Google API key inorder to use Google Youtube Player API. The .jar file
+that we downloaded actually need this API key else it would not work. Using this key they keep
+track of which application is using the API and charge them if they exceed the daily provided limit.
+
+Notes 5: Let us code the project now
+First we need to get the Google API key, youtube video ID and video playlist ID.
+Then we need to initialize the player (tell API key to the player).
+Override onInitializationSuccess() and onInitializationFailure() methods (declared in interface).
