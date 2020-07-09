@@ -26,10 +26,10 @@ public class Standalone extends AppCompatActivity {
                 Intent intent = null;
 
                 if(view.getId() == R.id.btnPlayVideo){
-                    intent = YouTubeStandalonePlayer.createVideoIntent(Standalone.this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_VIDEO_ID);
+                    intent = YouTubeStandalonePlayer.createVideoIntent(Standalone.this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_VIDEO_ID, 0, true, false);
                 }
                 else if(view.getId() == R.id.btnPlayList){
-                    intent = YouTubeStandalonePlayer.createPlaylistIntent(Standalone.this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_PLAYLIST);
+                    intent = YouTubeStandalonePlayer.createPlaylistIntent(Standalone.this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_PLAYLIST,0,0,true,false);
                 }
 
                 if(intent != null) {
